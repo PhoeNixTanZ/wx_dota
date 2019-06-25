@@ -1,0 +1,17 @@
+<import src='post-item/post-item-template.wxml' />
+<view>
+  <swiper indicator-dots='{{true}}' autoplay='{{true}}' interval="4000">
+  <!-- '{{false}}'表示false -->
+    <!-- <swiper-item><image src='/images/1.jpg' mode='aspectFill'></image></swiper-item> -->
+    <swiper-item><image src='/images/2.jpg' mode='aspectFill'></image></swiper-item>
+    <swiper-item><image src='/images/3.jpg' mode='aspectFill'></image></swiper-item>
+    <swiper-item><image src='/images/4.jpg' mode='aspectFill'></image></swiper-item>
+    <!-- <swiper-item><image src='/images/5.jpg' mode='aspectFill'></image></swiper-item> -->
+    <!-- <swiper-item><image src='/images/6.jpg' mode='aspectFill'></image></swiper-item> -->
+  </swiper>
+  <block wx:for='{{post_key}}' wx:for-item='item' wx:for-index='' wx:key="">
+  <!-- <text>{{index}}</text> -->
+    <!-- 对象===>数组平铺 -->
+    <template is='temp1' data='{{...item}}' />
+  </block>
+</view>

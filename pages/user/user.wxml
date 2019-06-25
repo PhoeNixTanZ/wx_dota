@@ -1,0 +1,41 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class='info_top'>
+    <view>
+      <image class='img_user' src='/images/avatar/1.png'></image>
+    </view>
+    <view>
+      <view class='font_name'>
+        <text>{{username}}</text>
+      </view>
+      <view class='font_info'>
+        <text class='font_sex'>{{sex}}</text>
+        <text class='font_age'>{{age}}</text>
+        <text class='font_star'>{{star}}</text>
+      </view>
+      <view class='font_info'>
+        <text>{{address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='dis_line'>
+    <view class='user_intro'>
+      <text>个人简介：</text>
+    </view>
+    <view class='user_text'>
+      <text>{{introduce}}</text>
+    </view>
+  </view>
+  <view class='dis'>
+    <text class='user_intro'>图片展示:</text>
+  </view>
+  <view class='img_align'>
+    <image class='img_bottom' src='/images/3.jpg'></image>
+  </view>
+</view>
+
+  
+
+
+
+

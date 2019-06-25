@@ -1,0 +1,14 @@
+<!-- wxml是用来编写页面骨架的文件 -->
+<view>
+  <view class='container'>
+    <!-- '/'代表根目录 -->
+    <!-- 图片默认大小-width:300px;height:225px -->
+    <image class='user-avatar' src='/images/avatar/1.png'></image>
+    <text class='user-name'>Hello,年糕</text>
+    <view class='moto-container' bind:tap='onTap'>
+      <!-- bind===>catch阻止程序向上冒泡 -->
+      <text class='moto'>开启小程序之旅</text>
+    </view>
+  </view>
+  <view class='wave'></view>
+</view>

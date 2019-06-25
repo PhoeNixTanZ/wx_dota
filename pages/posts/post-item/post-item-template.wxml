@@ -1,0 +1,23 @@
+<template name='temp1'>
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='{{author_image}}' bind:tap='onInfo'></image>
+      <text class='post-date'>{{date}}</text>
+    </view>
+    <view class='post-title'>
+      <text>{{hero_name}}</text>
+    </view>
+    <view>
+      <image class='post-image' src='{{hero_image}}'></image>
+    </view>
+    <view class='post-content'>
+      <text>{{hero_introduce}}</text>
+    </view>
+    <view class='post-like'>
+      <image class='post-like-image' src='{{post_like_image}}'></image>
+      <text class='post-like-font'>{{post_like_font}}</text>
+      <image class='post-like-image' src='{{post_view_image}}'></image>
+      <text class='post-like-font'>{{post_view_font}}</text>
+    </view>
+  </view>
+  </template>
